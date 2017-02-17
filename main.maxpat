@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 116.0, 45.0, 759.0, 751.0 ],
+		"rect" : [ 116.0, 45.0, 734.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -334,7 +334,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 44.0, 260.0, 167.0, 41.0 ],
-					"text" : "commit status and push"
+					"text" : "commit push and status"
 				}
 
 			}
