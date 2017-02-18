@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 146.0, 71.0, 1021.0, 751.0 ],
+		"rect" : [ 0.0, 71.0, 853.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -274,13 +274,14 @@
 					"frgb" : 0.0,
 					"id" : "obj-6",
 					"keymode" : 1,
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 44.0, 260.0, 167.0, 41.0 ],
-					"text" : "confirm this works"
+					"text" : "add tabs and abstract out commit code"
 				}
 
 			}
