@@ -37,7 +37,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 603.0, 534.0, 150.0, 20.0 ],
+					"patching_rect" : [ 261.0, 661.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 320.0, 538.0, 20.0 ],
 					"textcolor" : [ 0.0, 0.896456, 0.0, 1.0 ]
@@ -369,7 +369,7 @@
 					"patching_rect" : [ 261.0, 369.0, 167.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 226.0, 301.0, 41.0 ],
-					"text" : "git add separate command"
+					"text" : "presentation mode started"
 				}
 
 			}
@@ -428,6 +428,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 678.5, 335.5, 576.5, 335.5 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -543,6 +552,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-56", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -556,6 +574,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-60", 0 ]
 				}
 
 			}
