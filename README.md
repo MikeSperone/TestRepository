@@ -30,6 +30,11 @@ This will actually push your code up to your repository.  `--rebase` will safely
 
 This will display the git status of your project.  It will show any files changed, current branch, commits ready to be pushed, etc.
 
+## log
+
+`git log`
+
+This will show you a list of recent commits, in chronological order, with the most recent at the top.
 
 ## Things not included, but hope to be included soon
 
