@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 148.0, 64.0, 885.0, 751.0 ],
+		"rect" : [ 57.0, 57.0, 885.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,6 +29,41 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bangmode" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-64",
+					"keymode" : 1,
+					"maxclass" : "textedit",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "int", "", "" ],
+					"outputmode" : 1,
+					"parameter_enable" : 0,
+					"patching_rect" : [ 602.5, 134.0, 186.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 129.0, 226.0, 333.0, 41.0 ],
+					"varname" : "init-input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-55",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 140.0, 354.0, 66.5, 20.0 ],
+					"text" : "git_init"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-54",
@@ -45,6 +80,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
+					"hidden" : 1,
 					"id" : "obj-53",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -140,35 +176,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 602.5, 134.0, 114.0, 20.0 ],
-					"text" : "t b b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-14",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 602.5, 170.5, 32.5, 18.0 ],
-					"text" : "init"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-12",
 					"maxclass" : "tab",
 					"numinlets" : 1,
@@ -240,7 +247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 119.0, 455.0, 62.0, 20.0 ],
+					"patching_rect" : [ 49.0, 454.0, 62.0, 20.0 ],
 					"text" : "toconsole"
 				}
 
@@ -255,7 +262,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 185.0, 495.0, 52.0, 33.0 ],
+					"patching_rect" : [ 115.0, 494.0, 52.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 149.0, 285.0, 95.0, 20.0 ],
 					"text" : "clear console"
@@ -269,7 +276,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 162.0, 495.0, 20.0, 20.0 ],
+					"patching_rect" : [ 92.0, 494.0, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 285.0, 20.0, 20.0 ]
 				}
@@ -282,20 +289,20 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-58",
-					"linecount" : 118,
+					"linecount" : 14,
 					"lines" : 1,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.0, 559.0, 578.5, 35.0 ],
+					"patching_rect" : [ 49.0, 558.0, 578.5, 35.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 118,
+					"presentation_linecount" : 14,
 					"presentation_rect" : [ 130.0, 305.0, 676.0, 435.0 ],
 					"readonly" : 1,
 					"tabmode" : 0,
-					"text" : "cd /Users/michael/Documents/Max/max_git/ && git push origin master \n cd /Users/michael/Documents/Max/max_git/ && git status \n On branch master \n nothing to commit, working tree clean \n cd /Users/michael/Documents/Max/max_git/ && git log \n commit 2ca0cbac3d7a20f108f6a6d47a47abf28c160a22 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Mon Feb 20 15:13:35 2017 -500 \n \n init additions, and UI menu improments \n \n commit 3be67f7d878f25af075cb934de206ee850a27cd3 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Mon Feb 20 15:13:28 2017 -500 \n \n init additions, and UI menu improments \n \n commit 8c97577388f9e8ddc5ff4d5b8629ddba4e3a221e \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Mon Feb 20 14:24:10 2017 -500 \n \n add git log command \n \n commit c4745879a3d2b52334fe56510558227c73dca6cc \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 23:30:05 2017 -500 \n \n fix console refresh \n \n commit 4df82d00ba548a79c8d94e0f6e21fad1eb09ca08 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 23:26:29 2017 -500 \n \n abstract git code to make_git_command \n \n commit 4db0a68b932216d02c100f0d545266dd01ec3e40 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 23:19:10 2017 -500 \n \n abstract console code to toconsole \n \n commit 1c95f8bce9764ed234507210778da56cd32fa64e \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 23:18:38 2017 -500 \n \n bang \n \n commit f65427f9d136c8a0a258f36ce0655e47e6ae03d2 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 22:01:00 2017 -500 \n \n output console \n \n commit 806b141b04e28e1c31ece0cbdac2de3f80b3ba43 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 21:34:14 2017 -500 \n \n presentation mode started \n \n commit a8382d58817850baef37d5cfc551b6ad4a46c4e4 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 11:37:11 2017 -500 \n \n presentation mode started \n \n commit f245f15ea14e567f612a56f73b1e21edf0734834 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 11:30:47 2017 -500 \n \n git add included with commit \n \n commit 3d05540da428d349957e0421defd0737326e750c \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sat Feb 18 11:21:12 2017 -500 \n \n add tabs and abstract out commit code \n \n commit 477b738354e407951d1120b7a6f2fbec770d44c1 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Thu Feb 16 23:20:10 2017 -500 \n \n confirm this works \n \n commit a3fe796969ae05f80a8a8390eafe73fe649c5886 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Thu Feb 16 23:18:00 2017 -500 \n \n testing some things \n \n commit a86e19bb2359d28aa82012ea30c8f4569b83b53f \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Thu Feb 16 23:13:11 2017 -500 \n \n commit status and push \n \n commit 4886211a84a5c87da418a07780077b67ba11ef8d \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Thu Feb 16 23:11:47 2017 -500 \n \n max git started \n \n commit 1814993bf23d0904fcac77b98c7b88215a52b5b5 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sun Feb 12 19:26:08 2017 -500 \n \n added new message \n \n commit efabce006aa90632a7f5905025c2e728d519cea4 \n Author: Mike Sperone (from my MBP) <mike@mikesperone.com> \n Date: Sun Feb 12 19:20:52 2017 -500 \n \n initial max patch \n \n commit 15b88f687425c0b52e60f7873447792d212d1910 \n Author: Mike Sperone <mike@mikesperone.com> \n Date: Sun Feb 12 18:38:04 2017 -500 \n \n Initial commit \n",
+					"text" : "cd /Users/michael/Documents/Max/max_git/ && git status \n On branch master \n Changes not staged for commit: \n (use \"git add <file>...\" to update what will be committed) \n (use \"git checkout -- <file>...\" to discard changes in working directory) \n \n modified: main.maxpat \n \n Untracked files: \n (use \"git add <file>...\" to include in what will be committed) \n \n git_init.maxpat \n \n no changes added to commit (use \"git add\" and/or \"git commit -a)\" \n",
 					"textcolor" : [ 0.0, 0.91024, 0.0, 1.0 ]
 				}
 
@@ -309,7 +316,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.0, 525.0, 32.5, 18.0 ],
+					"patching_rect" : [ 92.0, 524.0, 32.5, 18.0 ],
 					"text" : "set"
 				}
 
@@ -389,7 +396,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 119.0, 355.0, 49.0, 20.0 ],
+					"patching_rect" : [ 49.0, 354.0, 49.0, 20.0 ],
 					"text" : "commit"
 				}
 
@@ -493,7 +500,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 236.0, 405.0, 60.0, 20.0 ],
+					"patching_rect" : [ 258.0, 455.0, 60.0, 20.0 ],
 					"text" : "print cmd"
 				}
 
@@ -531,19 +538,19 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
+					"hidden" : 1,
 					"id" : "obj-6",
 					"keymode" : 1,
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"outputmode" : 1,
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.0, 303.5, 167.0, 41.0 ],
+					"patching_rect" : [ 119.0, 217.0, 167.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 226.0, 333.0, 41.0 ],
-					"text" : "init additions, and UI menu improments"
+					"varname" : "git-input"
 				}
 
 			}
@@ -607,7 +614,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
+					"destination" : [ "obj-64", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
@@ -616,19 +623,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-79", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 128.5, 384.25, 332.5, 384.25 ],
+					"midpoints" : [ 58.5, 384.25, 332.5, 384.25 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -638,7 +636,7 @@
 					"destination" : [ "obj-63", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 128.5, 384.25, 245.5, 384.25 ],
+					"midpoints" : [ 58.5, 383.25, 267.5, 383.25 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -649,15 +647,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -753,10 +742,37 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 332.5, 438.0, 128.5, 438.0 ],
+					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 332.5, 438.0, 58.5, 438.0 ],
 					"source" : [ "obj-56", 0 ]
 				}
 
@@ -775,7 +791,7 @@
 					"destination" : [ "obj-58", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 171.5, 550.0, 128.5, 550.0 ],
+					"midpoints" : [ 101.5, 549.0, 58.5, 549.0 ],
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -786,6 +802,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-64", 0 ]
 				}
 
 			}
@@ -876,7 +901,7 @@
 					"destination" : [ "obj-68", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 582.0, 484.5, 171.5, 484.5 ],
+					"midpoints" : [ 582.0, 484.5, 101.5, 484.5 ],
 					"source" : [ "obj-80", 1 ]
 				}
 
@@ -914,6 +939,13 @@
 			}
 , 			{
 				"name" : "ui_show_hide.maxpat",
+				"bootpath" : "/Users/michael/Documents/Max/max_git",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "git_init.maxpat",
 				"bootpath" : "/Users/michael/Documents/Max/max_git",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
