@@ -4,6 +4,12 @@ A [Max/MSP](https://cycling74.com/products/max/) patch for integrating git direc
 
 This currently implements only a few of the many powerful things you can do with git.
 
+## init
+
+`git init && git remote add origin <remote_repository_URL>`
+
+Initialize your local directory to git url
+
 ## add
 
 `git add .`
