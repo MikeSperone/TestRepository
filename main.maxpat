@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 71.0, 885.0, 751.0 ],
+		"rect" : [ 532.0, 103.0, 885.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 527.0, 206.0, 32.5, 18.0 ],
+					"text" : "log"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -106,6 +120,7 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-58",
+					"linecount" : 4,
 					"lines" : 1,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -114,10 +129,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 119.0, 559.0, 578.5, 35.0 ],
 					"presentation" : 1,
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 130.0, 305.0, 676.0, 262.0 ],
 					"readonly" : 1,
 					"tabmode" : 0,
-					"text" : "cd /Users/michael/Documents/Max/testRepository/ && git push origin master \n",
+					"text" : "cd /Users/michael/Documents/Max/max_git/ && git commit -a -m \"add git log command\" \n On branch master \n nothing to commit, working tree clean \n",
 					"textcolor" : [ 0.0, 0.91024, 0.0, 1.0 ]
 				}
 
@@ -236,11 +252,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 6,
-					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 17.0, 167.0, 529.0, 20.0 ],
-					"text" : "sel 0 1 2 3 4"
+					"numinlets" : 7,
+					"numoutlets" : 7,
+					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 17.0, 167.0, 631.0, 20.0 ],
+					"text" : "sel 0 1 2 3 4 5"
 				}
 
 			}
@@ -258,7 +274,8 @@
 					"patching_rect" : [ 17.0, 95.0, 301.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 202.0, 301.0, 24.0 ],
-					"tabs" : [ "add", "commit", "status", "push", "pull" ],
+					"spacing_y" : 0.0,
+					"tabs" : [ "add", "commit", "status", "push", "pull", "log" ],
 					"valign" : 2
 				}
 
@@ -367,7 +384,6 @@
 					"frgb" : 0.0,
 					"id" : "obj-6",
 					"keymode" : 1,
-					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -377,7 +393,7 @@
 					"patching_rect" : [ 119.0, 303.5, 167.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 226.0, 301.0, 41.0 ],
-					"text" : "abstract git code to make_git_command"
+					"text" : "add git log command"
 				}
 
 			}
@@ -488,6 +504,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-79", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -510,6 +535,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 5 ]
 				}
 
 			}
@@ -664,21 +698,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "commit.maxpat",
-				"bootpath" : "/Users/michael/Documents/Max/testRepository",
+				"bootpath" : "/Users/michael/Documents/Max/max_git",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "toconsole.maxpat",
-				"bootpath" : "/Users/michael/Documents/Max/testRepository",
+				"bootpath" : "/Users/michael/Documents/Max/max_git",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "make_git_commands.maxpat",
-				"bootpath" : "/Users/michael/Documents/Max/testRepository",
+				"bootpath" : "/Users/michael/Documents/Max/max_git",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
