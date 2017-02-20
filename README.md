@@ -38,9 +38,9 @@ This will show you a list of recent commits, in chronological order, with the mo
 
 ## Things not included, but hope to be included soon
 
-`git init` and `git remote add origin <remote_repository_URL>`
+`git checkout origin <branch_name>` and `git checkout -b origin <branch_name>`
 
-- Setting up a new repository.
+- checkout branch and create new branch
 
 `git config`
 
