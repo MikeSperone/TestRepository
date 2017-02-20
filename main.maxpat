@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 57.0, 57.0, 885.0, 751.0 ],
+		"rect" : [ 217.0, 50.0, 885.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,10 +29,61 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-73",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 616.0, 193.0, 150.0, 127.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 616.0, 193.0, 260.0, 74.0 ],
+					"text" : "Not all errors/warnings are currently displayed,\nfor unknown reasons (the shell object, I guess)\n\nIf something's not working, try the command in Terminal (or command, or whatever)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-69",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 652.0, 193.0, 150.0, 127.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 6,
+					"presentation_rect" : [ 615.0, 66.0, 255.0, 87.0 ],
+					"text" : "Be careful with init...\n\nit should work, but you may be able to overwrite your git url if you do it a second time\n\n(which you can fix later, but still, not good!)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-66",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 674.5, 425.0, 62.0, 20.0 ],
+					"text" : "git_config"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bangmode" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
+					"hidden" : 1,
 					"id" : "obj-64",
 					"keymode" : 1,
 					"maxclass" : "textedit",
@@ -70,7 +121,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 716.5, 337.0, 34.0, 20.0 ],
+					"patching_rect" : [ 702.5, 279.0, 34.0, 20.0 ],
 					"text" : "print"
 				}
 
@@ -85,10 +136,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 716.5, 96.5, 150.0, 20.0 ],
+					"patching_rect" : [ 674.5, 405.0, 160.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.5, 198.0, 150.0, 20.0 ],
-					"text" : "! COMING SOON !",
+					"presentation_rect" : [ 215.5, 198.0, 182.0, 20.0 ],
+					"text" : "! CONFIG COMING SOON !",
 					"varname" : "config-buttons"
 				}
 
@@ -102,7 +153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 616.5, 235.5, 60.0, 20.0 ],
+					"patching_rect" : [ 602.5, 177.5, 60.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -116,7 +167,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.5, 303.5, 121.0, 20.0 ],
+					"patching_rect" : [ 602.5, 245.5, 121.0, 20.0 ],
 					"text" : "ui_show_hide"
 				}
 
@@ -130,7 +181,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.5, 270.0, 100.0, 18.0 ],
+					"patching_rect" : [ 602.5, 212.0, 100.0, 18.0 ],
 					"text" : "config init info git"
 				}
 
@@ -144,7 +195,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 616.5, 337.0, 69.0, 20.0 ],
+					"patching_rect" : [ 602.5, 279.0, 69.0, 20.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -176,6 +227,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hidden" : 1,
 					"id" : "obj-12",
 					"maxclass" : "tab",
 					"numinlets" : 1,
@@ -203,7 +255,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 550.5, 50.0, 301.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 221.5, 89.0, 333.0, 24.0 ],
+					"presentation_rect" : [ 129.0, 89.0, 333.0, 24.0 ],
 					"spacing_y" : 0.0,
 					"tabs" : [ "config", "init", "info", "git" ],
 					"valign" : 2
@@ -289,7 +341,6 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-58",
-					"linecount" : 14,
 					"lines" : 1,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -298,11 +349,10 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 49.0, 558.0, 578.5, 35.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 14,
 					"presentation_rect" : [ 130.0, 305.0, 676.0, 435.0 ],
 					"readonly" : 1,
 					"tabmode" : 0,
-					"text" : "cd /Users/michael/Documents/Max/max_git/ && git status \n On branch master \n Changes not staged for commit: \n (use \"git add <file>...\" to update what will be committed) \n (use \"git checkout -- <file>...\" to discard changes in working directory) \n \n modified: main.maxpat \n \n Untracked files: \n (use \"git add <file>...\" to include in what will be committed) \n \n git_init.maxpat \n \n no changes added to commit (use \"git add\" and/or \"git commit -a)\" \n",
+					"text" : "cd /Users/michael/Documents/Max/max_git/ && git push origin master \n",
 					"textcolor" : [ 0.0, 0.91024, 0.0, 1.0 ]
 				}
 
@@ -332,7 +382,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 422.0, 13.0, 54.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 424.0, 133.0, 54.0, 20.0 ],
+					"presentation_rect" : [ 342.5, 132.0, 54.0, 20.0 ],
 					"text" : "3. push"
 				}
 
@@ -350,7 +400,7 @@
 					"patching_rect" : [ 335.5, 11.0, 73.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 337.5, 131.0, 73.0, 47.0 ],
+					"presentation_rect" : [ 256.0, 130.0, 73.0, 47.0 ],
 					"text" : "2. commit with a message"
 				}
 
@@ -368,7 +418,7 @@
 					"patching_rect" : [ 219.5, 11.0, 116.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 221.5, 131.0, 116.0, 33.0 ],
+					"presentation_rect" : [ 140.0, 130.0, 116.0, 33.0 ],
 					"text" : "1. if there are new files, add them"
 				}
 
@@ -433,7 +483,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-1",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -538,9 +587,9 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
-					"hidden" : 1,
 					"id" : "obj-6",
 					"keymode" : 1,
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -550,6 +599,7 @@
 					"patching_rect" : [ 119.0, 217.0, 167.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 226.0, 333.0, 41.0 ],
+					"text" : "git config patch set up - not done",
 					"varname" : "git-input"
 				}
 
@@ -580,6 +630,18 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 17.0, 43.0, 164.0, 31.0 ],
 					"text" : ";\rmax sortpatcherdictonsave 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 57.0, 110.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 118.5, 113.0, 354.0, 167.0 ]
 				}
 
 			}
@@ -946,6 +1008,13 @@
 			}
 , 			{
 				"name" : "git_init.maxpat",
+				"bootpath" : "/Users/michael/Documents/Max/max_git",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "git_config.maxpat",
 				"bootpath" : "/Users/michael/Documents/Max/max_git",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
