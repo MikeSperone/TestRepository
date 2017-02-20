@@ -36,7 +36,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 91.875, 363.0, 89.125, 20.0 ],
+					"patching_rect" : [ 91.875, 490.0, 89.125, 20.0 ],
 					"text" : "t s s"
 				}
 
@@ -86,7 +86,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 732.0, 210.5, 62.0, 20.0 ],
+					"patching_rect" : [ 595.25, 354.5, 62.0, 20.0 ],
 					"text" : "git_config"
 				}
 
@@ -122,7 +122,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 457.25, 324.5, 66.5, 20.0 ],
+					"patching_rect" : [ 457.25, 354.5, 66.5, 20.0 ],
 					"text" : "git_init"
 				}
 
@@ -137,7 +137,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 732.0, 190.5, 160.0, 20.0 ],
+					"patching_rect" : [ 595.25, 334.5, 160.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 215.5, 198.0, 182.0, 20.0 ],
 					"text" : "! CONFIG COMING SOON !",
@@ -154,7 +154,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 573.25, 89.0, 60.0, 20.0 ],
+					"patching_rect" : [ 614.25, 134.0, 60.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -168,7 +168,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 573.25, 157.0, 121.0, 20.0 ],
+					"patching_rect" : [ 614.25, 202.0, 121.0, 20.0 ],
 					"text" : "ui_show_hide"
 				}
 
@@ -182,7 +182,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 573.25, 123.5, 100.0, 18.0 ],
+					"patching_rect" : [ 614.25, 168.5, 100.0, 18.0 ],
 					"text" : "config init info git"
 				}
 
@@ -196,7 +196,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 573.25, 190.5, 69.0, 20.0 ],
+					"patching_rect" : [ 614.25, 235.5, 69.0, 20.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -254,7 +254,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 675.0, 89.0, 217.0, 24.0 ],
+					"patching_rect" : [ 614.25, 95.0, 187.0, 27.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 89.0, 333.0, 24.0 ],
 					"spacing_y" : 0.0,
@@ -286,7 +286,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 166.75, 324.5, 125.0, 20.0 ],
+					"patching_rect" : [ 166.75, 354.5, 125.0, 20.0 ],
 					"text" : "make_git_commands"
 				}
 
@@ -448,7 +448,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 91.875, 324.5, 49.0, 20.0 ],
+					"patching_rect" : [ 91.875, 354.5, 49.0, 20.0 ],
 					"text" : "commit"
 				}
 
@@ -552,7 +552,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 162.0, 406.0, 35.0, 20.0 ],
+					"patching_rect" : [ 162.0, 523.0, 35.0, 20.0 ],
 					"text" : "shell"
 				}
 
@@ -565,7 +565,7 @@
 					"frgb" : 0.0,
 					"id" : "obj-6",
 					"keymode" : 1,
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -575,7 +575,7 @@
 					"patching_rect" : [ 91.875, 201.0, 62.0, 100.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 226.0, 333.0, 41.0 ],
-					"text" : "comment updates and UI panel are in the last commit",
+					"text" : "updates and things in the editor window",
 					"varname" : "git-input"
 				}
 
@@ -753,9 +753,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
+					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 466.75, 388.25, 101.375, 388.25 ],
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -765,16 +766,7 @@
 					"destination" : [ "obj-78", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 171.5, 523.0, 101.375, 523.0 ],
+					"midpoints" : [ 171.5, 557.0, 101.375, 557.0 ],
 					"source" : [ "obj-56", 0 ]
 				}
 
@@ -876,6 +868,7 @@
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 176.25, 388.25, 101.375, 388.25 ],
 					"source" : [ "obj-79", 0 ]
 				}
 
@@ -903,6 +896,7 @@
 					"destination" : [ "obj-50", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 623.75, 127.0, 725.75, 127.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
