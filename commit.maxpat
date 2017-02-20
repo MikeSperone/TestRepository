@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 389.0, 71.0, 509.0, 329.0 ],
+		"rect" : [ 376.0, 71.0, 509.0, 329.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,7 +29,9 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "\"add .\"",
+					"comment" : "\"add .\"",
+					"hint" : "\"add .\"",
 					"id" : "obj-10",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -68,7 +70,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "git command",
+					"comment" : "git command",
+					"hint" : "git command",
 					"id" : "obj-5",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
