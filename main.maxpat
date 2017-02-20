@@ -40,7 +40,7 @@
 					"patching_rect" : [ 616.0, 193.0, 150.0, 127.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 616.0, 193.0, 260.0, 74.0 ],
+					"presentation_rect" : [ 546.0, 209.5, 260.0, 74.0 ],
 					"text" : "Not all errors/warnings are currently displayed,\nfor unknown reasons (the shell object, I guess)\n\nIf something's not working, try the command in Terminal (or command, or whatever)"
 				}
 
@@ -58,7 +58,7 @@
 					"patching_rect" : [ 652.0, 193.0, 150.0, 127.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 615.0, 66.0, 255.0, 87.0 ],
+					"presentation_rect" : [ 546.0, 89.0, 255.0, 87.0 ],
 					"text" : "Be careful with init...\n\nit should work, but you may be able to overwrite your git url if you do it a second time\n\n(which you can fix later, but still, not good!)"
 				}
 
@@ -599,7 +599,7 @@
 					"patching_rect" : [ 119.0, 217.0, 167.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 129.0, 226.0, 333.0, 41.0 ],
-					"text" : "git config patch set up - not done",
+					"text" : "comment updates and UI panel are in the last commit",
 					"varname" : "git-input"
 				}
 
