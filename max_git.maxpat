@@ -5,10 +5,10 @@
 			"major" : 6,
 			"minor" : 1,
 			"revision" : 10,
-			"architecture" : "x64"
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 90.0, 45.0, 835.0, 771.0 ],
+		"rect" : [ 135.0, 45.0, 715.0, 771.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -72,7 +72,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x64"
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 377.0, 480.0 ],
@@ -418,10 +418,10 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x64"
+							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 563.0, 72.0, 368.0, 331.0 ],
+						"rect" : [ 885.0, 66.0, 412.0, 354.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -441,6 +441,20 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 81.0, 224.0, 170.0, 20.0 ],
+									"text" : "regexp patchers/ @substitute"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-6",
@@ -470,7 +484,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 81.0, 265.0, 25.0, 25.0 ]
+									"patching_rect" : [ 81.0, 288.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -523,7 +537,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 81.0, 225.0, 243.0, 20.0 ],
+									"patching_rect" : [ 81.0, 256.0, 243.0, 20.0 ],
 									"text" : "sprintf %s %s && %s"
 								}
 
@@ -568,6 +582,24 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-60", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-60", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-62", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -577,7 +609,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-60", 0 ],
+									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-43", 0 ]
@@ -665,10 +697,10 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x64"
+							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 70.0, 459.0, 322.0 ],
+						"rect" : [ 25.0, 70.0, 466.0, 470.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -688,6 +720,20 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 80.0, 228.0, 170.0, 20.0 ],
+									"text" : "regexp patchers/ @substitute"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-1",
@@ -760,7 +806,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 80.0, 258.0, 25.0, 25.0 ]
+									"patching_rect" : [ 80.0, 293.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -813,7 +859,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 80.0, 223.0, 269.0, 20.0 ],
+									"patching_rect" : [ 80.0, 258.0, 269.0, 20.0 ],
 									"text" : "sprintf symout %s %s && git commit -a -m \\\"%s\\\""
 								}
 
@@ -885,6 +931,24 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -931,7 +995,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-23", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-67", 0 ]
@@ -983,10 +1047,10 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x64"
+							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 70.0, 411.0, 291.0 ],
+						"rect" : [ 25.0, 70.0, 416.0, 405.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1005,14 +1069,29 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 66.0, 208.0, 170.0, 20.0 ],
+									"text" : "regexp patchers/ @substitute"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-5",
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 66.0, 244.0, 25.0, 25.0 ]
+									"patching_rect" : [ 66.0, 273.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1080,7 +1159,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 66.0, 209.0, 331.0, 20.0 ],
+									"patching_rect" : [ 66.0, 238.0, 331.0, 20.0 ],
 									"text" : "sprintf symout %s %s && git init && git remote add origin %s"
 								}
 
@@ -1115,6 +1194,24 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
 									"disabled" : 0,
@@ -1170,7 +1267,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-23", 0 ],
+									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-67", 0 ]
@@ -1222,7 +1319,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x64"
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 209.0, 393.0 ],
@@ -1566,7 +1663,7 @@
 							"major" : 6,
 							"minor" : 1,
 							"revision" : 10,
-							"architecture" : "x64"
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 70.0, 640.0, 480.0 ],
@@ -1843,7 +1940,7 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-58",
-					"linecount" : 6,
+					"linecount" : 13,
 					"lines" : 1,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -1852,11 +1949,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 212.375, 671.0, 309.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
+					"presentation_linecount" : 9,
 					"presentation_rect" : [ 19.5, 234.0, 676.0, 535.0 ],
 					"readonly" : 1,
 					"tabmode" : 0,
-					"text" : "cd /Users/michael/Documents/Max/max_git/ && git status \n cd /Users/michael/Documents/Max/max_git/ && git log \n cd /Users/michael/Documents/Max/max_git/ && git status \n",
+					"text" : "cd /Users/michael/Documents/Max/max_git/ && git status \n On branch master \n Changes not staged for commit: \n (use \"git add <file>...\" to update what will be committed) \n (use \"git checkout -- <file>...\" to discard changes in working directory) \n \n modified: max_git.maxpat \n \n no changes added to commit (use \"git add\" and/or \"git commit -a)\" \n",
 					"textcolor" : [ 0.0, 0.91024, 0.0, 1.0 ]
 				}
 
@@ -2039,8 +2136,8 @@
 					"id" : "obj-56",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 282.5, 593.0, 35.0, 20.0 ],
 					"text" : "shell"
 				}
@@ -2055,7 +2152,7 @@
 					"hidden" : 1,
 					"id" : "obj-6",
 					"keymode" : 1,
-					"linecount" : 3,
+					"linecount" : 6,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -2065,7 +2162,7 @@
 					"patching_rect" : [ 212.375, 201.0, 68.0, 99.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 155.0, 333.0, 41.0 ],
-					"text" : "reformat to single patcher",
+					"text" : "allow this patch to work in a patchers/ folder (for projects)",
 					"varname" : "git-input"
 				}
 
@@ -2494,7 +2591,11 @@
 
 			}
  ],
-		"dependency_cache" : [  ]
+		"dependency_cache" : [ 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ]
 	}
 
 }
