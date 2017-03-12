@@ -2,6 +2,9 @@
 
 A [Max/MSP](https://cycling74.com/products/max/) patch for integrating git directly into your patch.
 
+*This patch is still very new and under development, use at your own risk!*
+Please report issues and I will happily fix them :)
+
 This currently implements only a few of the many powerful things you can do with git.
 
 ## init
