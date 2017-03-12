@@ -449,8 +449,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 81.0, 224.0, 170.0, 20.0 ],
-									"text" : "regexp patchers/ @substitute"
+									"patching_rect" : [ 81.0, 224.0, 187.0, 20.0 ],
+									"text" : "regexp patchers/ @substitute %0"
 								}
 
 							}
@@ -728,8 +728,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 80.0, 228.0, 170.0, 20.0 ],
-									"text" : "regexp patchers/ @substitute"
+									"patching_rect" : [ 80.0, 228.0, 187.0, 20.0 ],
+									"text" : "regexp patchers/ @substitute %0"
 								}
 
 							}
@@ -1069,7 +1069,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1079,8 +1078,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 66.0, 208.0, 170.0, 20.0 ],
-									"text" : "regexp patchers/ @substitute"
+									"patching_rect" : [ 66.0, 208.0, 187.0, 20.0 ],
+									"text" : "regexp patchers/ @substitute %0"
 								}
 
 							}
@@ -1773,7 +1772,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
-					"hidden" : 1,
 					"id" : "obj-53",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1834,6 +1832,7 @@
 					"button" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hidden" : 1,
 					"id" : "obj-17",
 					"maxclass" : "tab",
 					"multiline" : 0,
