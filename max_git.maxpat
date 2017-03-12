@@ -10,7 +10,7 @@
 ,
 		"rect" : [ 58.0, 45.0, 714.0, 771.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -130,7 +130,6 @@
 					"button" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"id" : "obj-2",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -140,10 +139,10 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 479.0, 95.0, 108.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 45.0, 140.0, 333.0, 24.0 ],
+					"presentation_rect" : [ 30.0, 125.0, 333.0, 24.0 ],
 					"spacing_y" : 0.0,
 					"tabs" : [ "reset", "undo" ],
-					"varname" : "info-undo"
+					"varname" : "undo-buttons"
 				}
 
 			}
@@ -302,8 +301,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1065.25, 168.5, 100.0, 18.0 ],
-					"text" : "config init info git"
+					"patching_rect" : [ 1065.25, 168.5, 130.0, 18.0 ],
+					"text" : "config init info git undo"
 				}
 
 			}
@@ -462,7 +461,7 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-58",
-					"linecount" : 2,
+					"linecount" : 22,
 					"lines" : 1,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
@@ -471,10 +470,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 212.375, 671.0, 309.0, 43.0 ],
 					"presentation" : 1,
+					"presentation_linecount" : 16,
 					"presentation_rect" : [ 19.5, 234.0, 676.0, 535.0 ],
 					"readonly" : 1,
 					"tabmode" : 0,
-					"text" : "cd /Users/michael/Documents/Max/max_git/ && git push origin master \n",
+					"text" : "cd /Users/michael/Documents/Max/max_git/ && git pull origin master \n Updating a25c574..ef389b5 \n cd /Users/michael/Documents/Max/max_git/ && git status \n On branch master \n Changes not staged for commit: \n (use \"git add/rm <file>...\" to update what will be committed) \n (use \"git checkout -- <file>...\" to discard changes in working directory) \n \n deleted: main.maxpat \n \n Untracked files: \n (use \"git add <file>...\" to include in what will be committed) \n \n max_git.maxpat \n \n no changes added to commit (use \"git add\" and/or \"git commit -a)\" \n",
 					"textcolor" : [ 0.0, 0.91024, 0.0, 1.0 ]
 				}
 
@@ -605,6 +605,7 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"hidden" : 1,
 					"id" : "obj-1",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -683,6 +684,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
+					"hidden" : 1,
 					"id" : "obj-6",
 					"keymode" : 1,
 					"linecount" : 4,
