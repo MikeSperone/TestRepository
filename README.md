@@ -39,6 +39,12 @@ This will actually push your code up to your repository.  `--rebase` will safely
 
 This will display the git status of your project.  It will show any files changed, current branch, commits ready to be pushed, etc.
 
+## undoing changes
+
+`git reset --hard @{u}` - Reset to upstream branch (make it match what is on github)
+
+`git reset --hard HEAD^` - Undo changes since the last commit
+
 ## log
 
 `git log`
